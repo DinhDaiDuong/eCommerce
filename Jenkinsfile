@@ -32,7 +32,7 @@ pipeline {
                    dir('eCommerce') {  
                         sh 'node -v'  // Kiểm tra version
                         sh 'npm -v'   // Kiểm tra npm
-                        sh 'npm install'
+                         sh 'npm install --legacy-peer-deps'  
                         sh 'npm test --passWithNoTests || true'
                         sh 'CI=false npm run build'
 
