@@ -51,7 +51,6 @@ pipeline {
                     def report = """
                         Pipeline Report
                         ==============
-                         Backend Build: ${readFile('ecomResource/metrics/backend-build.txt').trim()}ms
                         Frontend Build: ${readFile('ecomResource/metrics/frontend-build.txt').trim()}ms
                     """.stripIndent()
                     
