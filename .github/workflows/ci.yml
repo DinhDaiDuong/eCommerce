@@ -22,7 +22,7 @@ jobs:
         
     - name: Install Frontend Dependencies
     
-      run: npm install
+      run: npm ci
       
     - name: Run Frontend Tests
       
