@@ -28,6 +28,9 @@ jobs:
 
     - name: Run Frontend Tests  
       run: npm test  
+
+    - name: Build Docker image
+      run: docker build -t ecomerce-frontend:${{ github.sha }} .
       
     - name: Resource Information
       run: |
